@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My card</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Card ⬇</h1>
+    </header>
+
+    <div class="container">
+      <div id="product1">
+        <img src="./images/dowdamona.jpg" alt="dowdamona" />
+        <h3>DOWDAMONA</h3>
+        <h2>$50</h2>
+      </div>
+
+      <div id="product2">
+        <img src="./images/shal-22.jpg" alt="shall" />
+        <h3>SHALL</h3>
+        <h2>$100</h2>
+      </div>
+
+      <div id="product3">
+        <img src="./images/golnigar-00.jpg" alt="golnigar" />
+        <h3>GOLNIGAR</h3>
+        <h2>$30</h2>
+      </div>
+    </div>
+
+    <div class="Subtotal">
+      <h2>Cart Subtotal:$<span id="Subtotal">0</span></h2>
+    </div>
+
+    <footer>
+      <p>Made By Masooma Mohammadi 👩‍💻</p>
+    </footer>
+
+    <script>
+      document.querySelector("#product1").onclick = function () {
+        let all = document.querySelector("#Subtotal").textContent;
+        all = parseInt(all);
+        all += 50;
+        document.querySelector("#Subtotal").textContent = all;
+      };
+
+      document.querySelector("#product2").onclick = function () {
+        let all = document.querySelector("#Subtotal").textContent;
+        all = parseInt(all);
+        all += 100;
+        document.querySelector("#Subtotal").textContent = all;
+      };
+
+      document.querySelector("#product3").onclick = function () {
+        let all = document.querySelector("#Subtotal").textContent;
+        all = parseInt(all);
+        all += 30;
+        document.querySelector("#Subtotal").textContent = all;
+      };
+    </script>
+  </body>
+</html>
