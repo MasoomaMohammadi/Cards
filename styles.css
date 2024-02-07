@@ -99,10 +99,16 @@ img {
 }
 }
 
-@media (max-width: 448px) {
+@media (max-width: 420px) {
 img {
   width: 120px;
   height: 120px;
+}
+
+.container {
+  gap: 12px;
+  padding: auto 24px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -111,5 +117,10 @@ h3 {
 
 .Subtotal {
   margin-left: 32px;
+  margin-top: 150px;
+}
+
+footer{
+margin-bottom: 0;
 }
 }
