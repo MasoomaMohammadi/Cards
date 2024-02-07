@@ -123,9 +123,13 @@ footer {
     font-size: 14px;
   }
 
+  h2{
+    font-size: 18px;
+  }
+
   .Subtotal {
     margin-left: 32px;
-    margin-top: 160px;
+    margin-top: 180px;
   }
 
   footer {
