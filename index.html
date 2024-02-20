@@ -31,35 +31,22 @@
       </div>
     </div>
 
-    <div class="Subtotal">
-      <h2>Cart Subtotal:$<span id="Subtotal">0</span></h2>
+    <div class="parent">
+      <div class="Subtotal">
+        <h2>Cart Subtotal:$<span id="Subtotal">0</span></h2>
+      </div>
+      <div class="tax">
+        <h2>Cart Tax:$<span id="tax">0</span></h2>
+      </div>
+      <div class="total">
+        <h2>Cart Total:$<span id="total">0</span></h2>
+      </div>
     </div>
 
     <footer>
       <p>Made By Masooma Mohammadi 👩‍💻</p>
     </footer>
 
-    <script>
-      document.querySelector("#product1").onclick = function () {
-        let all = document.querySelector("#Subtotal").textContent;
-        all = parseInt(all);
-        all += 50;
-        document.querySelector("#Subtotal").textContent = all;
-      };
-
-      document.querySelector("#product2").onclick = function () {
-        let all = document.querySelector("#Subtotal").textContent;
-        all = parseInt(all);
-        all += 100;
-        document.querySelector("#Subtotal").textContent = all;
-      };
-
-      document.querySelector("#product3").onclick = function () {
-        let all = document.querySelector("#Subtotal").textContent;
-        all = parseInt(all);
-        all += 30;
-        document.querySelector("#Subtotal").textContent = all;
-      };
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
